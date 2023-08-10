@@ -1,6 +1,0 @@
-name=['chandu','sorin','revanth','tim','esther']
-name.append("TELECOM")
-name.insert(6,'network')
-name.remove("network")
-name[1:3]=["sus","padm"]
-print(name)

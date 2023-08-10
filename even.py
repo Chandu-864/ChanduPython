@@ -8,4 +8,4 @@ while(x!=0):
     else:
         print("odd")
 
-    x = 100/2
+    y = 100/2
