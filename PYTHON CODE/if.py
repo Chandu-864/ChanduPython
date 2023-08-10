@@ -6,4 +6,4 @@ for y in x:
         even = even + int(y)
     else:
         odd = odd + int(y)
-        print("sorin")
+        print("chandu")
