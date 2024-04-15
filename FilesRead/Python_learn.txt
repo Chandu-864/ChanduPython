@@ -1,0 +1,3 @@
+In python, you can run code using the files in your pc and input.
+In python, you can add more value to the data using classes and importing them whenever necessary
+In python, you can use functions and can call that function anywhere in that particular code
