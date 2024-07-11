@@ -51,13 +51,18 @@ function startQuiz() {
     showQuestions();
 }
 
+function resetState() {
+    nextButton.style.display = "none";
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+}
+
 function showQuestions() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-
-    answerButtons.innerHTML = '';
 
     currentQuestion.answers.forEach(answer=> {
         const button = document.createElement("button");
@@ -70,13 +75,6 @@ function showQuestions() {
         }
         button.addEventListener("click", selectAnswer);
     });
-}
-
-function resetState() {
-    nextButton.style.display = "none";
-    while (answerButtons.firstChild) {
-        answerButtons.removeChild(answerButtons.firstChild);
-    }
 }
 
 function selectAnswer(e) {

@@ -81,3 +81,7 @@ body {
 .incorrect {
     background: #ff9393;
 }
+
+#btn2:active {
+    transform: scale(0.95);
+}
